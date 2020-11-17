@@ -1,0 +1,19 @@
+{
+  "name": "weighted-pr-distribution",
+  "version": "1.0.0",
+  "description": "Automatically distributes PR reviews",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build index.js --out-dir dist --target node --bundle-node-modules"
+  },
+  "author": "Caleb Sharp",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "date-fns": "^2.16.1"
+  },
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
