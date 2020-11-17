@@ -1,5 +1,5 @@
-name: Weighted PR Review Distribution
-description: Automatically distributes PR reviews
+name: Weighted Assign Action
+description: Automatically distribute pull request reviews
 author: Caleb Sharp
 branding:
   icon: move
@@ -9,7 +9,7 @@ inputs:
     description: Github token secret
     required: true
   config:
-    description: 'Path to config file'
+    description: "Path to config file"
     default: .github/reviewers.txt
 runs:
   using: node12

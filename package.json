@@ -1,5 +1,5 @@
 {
-  "name": "weighted-pr-distribution",
+  "name": "weighted-assign-action",
   "version": "1.0.0",
   "description": "Automatically distributes PR reviews",
   "main": "dist/index.js",
