@@ -98,7 +98,9 @@ async function run() {
       return
     }
 
-    const reviewers = getReviewers()
+    const reviewers = getReviewers().filter(
+      r => r.username !== github.context.payload.pull_request.user.login
+    )
 
     const cutoffDate = subDays(new Date(), 7)
 
