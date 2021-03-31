@@ -9,7 +9,8 @@ function getReviewers() {
   return fs
     .readFileSync(configPath, 'utf8')
     .split('\n')
-    .map(r => r.split(' '))
+    .map(r => r.split(/\s+/))
+    .filter(r => r[0] !== '')
     .map(reviewer => ({
       username: reviewer[0],
       weight: reviewer[1] == undefined ? 0 : parseFloat(reviewer[1])
